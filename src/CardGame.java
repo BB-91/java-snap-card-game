@@ -23,6 +23,7 @@ abstract class CardGame{
 
     protected final void resetGlobalGameVars() {
         deckOfCards = new Deck();
+        deckOfCards.shuffle();
         lastPlayedCard = null;
         turnPlayerNumber = 1;
     }
